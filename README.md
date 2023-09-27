@@ -110,7 +110,7 @@ If executed correctly, and provided that your sample data file contains expirati
 
 Before relying on the script for important reminders, test it with sample data. 
 
-Uncommented the sendEmail method as shown bellow, run the script and check your email inbox for a notification with the subject line like "Renewal Notification - Supplier 3."
+Uncomment the sendEmail method as shown bellow, run the script and check your email inbox for a notification with the subject line like "Renewal Notification - Supplier 3."
 
 ```jsx
  // Send an email notification
