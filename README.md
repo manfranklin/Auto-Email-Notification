@@ -1,5 +1,5 @@
 # Auto-Email-Notification
-This repository contains Google Apps Script files utilized for sending automated notification emails from Google Sheets.
+
 Google Apps Script is a powerful tool that allows you to automate tasks and integrate various Google Workspace applications. It uses modern JavaScript and offers built-in libraries for popular Google Workspace apps like Gmail, Calendar, Drive, and more. The best part? You don't need to install anything—it comes with a built-in code editor in your browser, and your scripts run on Google's servers. Learn more at [Google Apps Script Overview](https://developers.google.com/apps-script/overview).
 
 In this guide, we will walk you through the process of setting up automatic email notifications in Google Sheets using Apps Script. Specifically, we will create a function that sends renewal email notifications to users when the renewal date is 30 days away from the current day. Follow these steps to get started:
