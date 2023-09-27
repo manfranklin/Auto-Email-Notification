@@ -78,7 +78,7 @@ function sendNotification() {
           // Log email notification details
           console.log(`Email sent: Subject - ${subject}, Message - ${message}`);
 
-          // Send an email notification, uncomment the line below  when ready to send the message, and replace recipient_example@email.com with the email you wantg to send notification to.
+          // Send an email notification, uncomment the line below  when ready to send the message
           //MailApp.sendEmail('recipient_example@email.com', subject, message);
         }
       }
@@ -110,12 +110,13 @@ If executed correctly, and provided that your sample data file contains expirati
 
 Before relying on the script for important reminders, test it with sample data. 
 
-Uncomment the sendEmail method as shown bellow, run the script and check your email inbox for a notification with the subject line like "Renewal Notification - Supplier 3."
+Go back to your code. Uncomment the line your and replace the example email with your actual email.
 
 ```jsx
  // Send an email notification
  MailApp.sendEmail('recipient_example@email.com', subject, message);
 ```
+Run the script and check your email inbox for a notification with the subject line like "Renewal Notification - Supplier 3."
 
 ### Step 7: Set Triggers
 
