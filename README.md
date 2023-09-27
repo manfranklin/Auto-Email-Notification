@@ -1,6 +1,6 @@
-Google Apps Script is a powerful tool that allows you to automate tasks and integrate various Google Workspace applications. It uses modern JavaScript and offers built-in libraries for popular Google Workspace apps like Gmail, Calendar, Drive, and more. The best part? You don't need to install anything—it comes with a built-in code editor in your browser, and your scripts run on Google's servers. Learn more at [Google Apps Script Overview](https://developers.google.com/apps-script/overview).
+# Google Sheets & App Scripts: Automatic Email Notifications Setup Guide
 
-![-Create-Google-Sheet](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/1-Create-Google-Sheet.png)
+Google Apps Script is a powerful tool that allows you to automate tasks and integrate various Google Workspace applications. It uses modern JavaScript and offers built-in libraries for popular Google Workspace apps like Gmail, Calendar, Drive, and more. The best part? You don't need to install anything—it comes with a built-in code editor in your browser, and your scripts run on Google's servers. Learn more at [Google Apps Script Overview](https://developers.google.com/apps-script/overview).
 
 In this guide, we will walk you through the process of setting up automatic email notifications in Google Sheets using Apps Script. Specifically, we will create a function that sends renewal email notifications to users when the renewal date is 30 days away from the current day. Follow these steps to get started:
 
@@ -8,23 +8,23 @@ In this guide, we will walk you through the process of setting up automatic emai
 
 Begin by creating a new Google Sheet or open an existing one where you want to manage contract expiration.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/eca062e4-c4a5-401d-afc4-9d40ceef3386/Untitled.png)
+![Create-Google-Sheet](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/1-Create-Google-Sheet.png)
 
 ### Step 2: Set Up Your Data
 
 In your Google Sheet, create a table with columns for relevant contract information, such as Contract Name, Start Date, End Date, and Client Contact. Input your contract details into this table.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/f4e4a346-cf78-4661-99bc-81a34f736305/Untitled.png)
+![Setup-Data](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/2-Setup-Data.png)
 
 ### Step 3: Open Script Editor
 
 From the Google Sheet, go to "Extensions" > "Apps Script" to open the Google Apps Script editor.
 
-![Screenshot 2023-09-26 154125.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/43ea5e96-d090-41f6-986a-e19506762e18/Screenshot_2023-09-26_154125.png)
+![Open-Script-Editor](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/3-Open-Script-Editor.png)
 
 A new tab will pop out with a empty project as shown bellow
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/1709bd5d-8f3d-4601-ba74-cdda10d16d33/Untitled.png)
+![Empty Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/4-Empty-Project.png)
 
 ### Step 4: Write the Script
 
@@ -101,11 +101,11 @@ function calculateDaysDifference(finalDate, initialDate) {
 
 Save the code by clicking the archive icon at the top of the code editor. Then, click "Run" to execute the script. You may need to authorize the script to access your Google Sheets and send emails.
 
-![2.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/a996fa61-e19f-4ae4-bc2b-253193c5590a/2.png)
+![Save Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/5-Save-Script.png)
 
 If executed correctly, and provided that your sample data file contains expiration dates set 45 days ahead of the current date, your output should resemble the following:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/aab2fe81-e2bc-4f54-8b73-dde3deb52cbf/Untitled.png)
+![Executed Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/6-Executed-Script.png)
 
 ### Step 6: Test the Script
 
@@ -120,11 +120,11 @@ Before relying on the script for important reminders, test it with sample data. 
 
 To automate the script, set up triggers to run it at specific intervals. Go to the left panel and select "Triggers." Click the "Add Trigger" button and configure a time-driven event source trigger to run `sendNotification`function daily. 
 
-![Screenshot 2023-09-27 105526.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/6f301bc5-ce70-46f2-bc42-8aba32941f3d/Screenshot_2023-09-27_105526.png)
+![Set Triggers](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/7-Set-Trigger.png)
 
-![Screenshot 2023-09-27 105804.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/5a85c3a0-f822-45e1-8155-b9fdc17714c5/Screenshot_2023-09-27_105804.png)
+![Add Trigger](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/8-Add-Trigger.png)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/89abda67-c01d-42f4-9f5f-55e551c18fac/cdc200b1-cd0d-456b-aec8-11db53aa5e02/Untitled.png)
+![Config Trigger](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/9-Config-Trigger.png)
 
 ### Step 8: Monitor and Refine
 
