@@ -113,7 +113,6 @@ Before relying on the script for important reminders, test it with sample data.
 Return to your code. Remove the '//' symbols from line 50 and replace the placeholder email with your own.
 
 ```jsx
- // Send an email notification
  // MailApp.sendEmail('recipient_example@email.com', subject, message);
 ```
 Run the script and check your email inbox for a notification with the subject line like "Renewal Notification - Supplier 3."
