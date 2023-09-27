@@ -114,7 +114,7 @@ Return to your code. Remove the '//' symbols from line 50 and replace the placeh
 
 ```jsx
  // Send an email notification
- MailApp.sendEmail('recipient_example@email.com', subject, message);
+ // MailApp.sendEmail('recipient_example@email.com', subject, message);
 ```
 Run the script and check your email inbox for a notification with the subject line like "Renewal Notification - Supplier 3."
 
