@@ -8,23 +8,23 @@ In this guide, we will walk you through the process of setting up automatic emai
 
 Begin by creating a new Google Sheet or open an existing one where you want to manage contract expiration.
 
-![Create-Google-Sheet](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/1-Create-Google-Sheet.png)
+![Create-Google-Sheet](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/1-Create-Google-Sheet.png)
 
 ### Step 2: Set Up Your Data
 
 In your Google Sheet, create a table with columns for relevant contract information, such as Contract Name, Start Date, End Date, and Client Contact. Input your contract details into this table.
 
-![Setup-Data](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/2-Setup-Data.png)
+![Setup-Data](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/2-Setup-Data.png)
 
 ### Step 3: Open Script Editor
 
 From the Google Sheet, go to "Extensions" > "Apps Script" to open the Google Apps Script editor.
 
-![Open-Script-Editor](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/3-Open-Script-Editor.png)
+![Open-Script-Editor](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/3-Open-Script-Editor.png)
 
 A new tab will pop out with a empty project as shown bellow
 
-![Empty Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/4-Empty-Project.png)
+![Empty Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/4-Empty-Project.png)
 
 ### Step 4: Write the Script
 
@@ -101,11 +101,11 @@ function calculateDaysDifference(finalDate, initialDate) {
 
 Save the code by clicking the archive icon at the top of the code editor. Then, click "Run" to execute the script. You may need to authorize the script to access your Google Sheets and send emails.
 
-![Save Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/5-Save-Script.png)
+![Save Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/5-Save-Script.png)
 
 If executed correctly, and provided that your sample data file contains expiration dates set 45 days ahead of the current date, your output should resemble the following:
 
-![Executed Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/6-Executed-Script.png)
+![Executed Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/6-Executed-Script.png)
 
 ### Step 6: Test the Script
 
@@ -120,11 +120,11 @@ Before relying on the script for important reminders, test it with sample data. 
 
 To automate the script, set up triggers to run it at specific intervals. Go to the left panel and select "Triggers." Click the "Add Trigger" button and configure a time-driven event source trigger to run `sendNotification`function daily. 
 
-![Set Triggers](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/7-Set-Trigger.png)
+![Set Triggers](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/7-Set-Trigger.png)
 
-![Add Trigger](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/8-Add-Trigger.png)
+![Add Trigger](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/8-Add-Trigger.png)
 
-![Config Trigger](https://github.com/manfranklin/Auto-Email-Notification/blob/main/images/9-Config-Trigger.png)
+![Config Trigger](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/9-Config-Trigger.png)
 
 ### Step 8: Monitor and Refine
 
