@@ -46,7 +46,7 @@ function sendNotification() {
           // Log email notification details
           console.log(`Email sent: Subject - ${subject}, Message - ${message}`);
 
-          // Send an email notification, uncomment the line below  when ready to send the message, and replace recipient_example@email.com with the email you wantg to send notification to.
+          // Send an email notification, uncomment the line below  when ready to send the message
           //MailApp.sendEmail('recipient_example@email.com', subject, message);
         }
       }
