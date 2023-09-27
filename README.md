@@ -110,7 +110,7 @@ If executed correctly, and provided that your sample data file contains expirati
 
 Before relying on the script for important reminders, test it with sample data. 
 
-Go back to your code. Uncomment the line your and replace the example email with your actual email.
+Return to your code. Remove the '//' symbols from line 50 and replace the placeholder email with your own.
 
 ```jsx
  // Send an email notification
