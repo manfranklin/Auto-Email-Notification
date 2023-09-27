@@ -100,11 +100,11 @@ function calculateDaysDifference(finalDate, initialDate) {
 
 Save the code by clicking the archive icon at the top of the code editor. Then, click "Run" to execute the script. You may need to authorize the script to access your Google Sheets and send emails.
 
-![Save Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/5-Save-Script.png)
+<img src="https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/5-Save-Script.png" alt="Save Script" width="900"/>
 
 If executed correctly, and provided that your sample data file contains expiration dates set 45 days ahead of the current date, your output should resemble the following:
 
-![Executed Script](https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/6-Executed-Script.png)
+<img src="https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/6-Executed-Script.png" alt="Executed Script" width="900"/>
 
 ### Step 6: Test the Script
 
