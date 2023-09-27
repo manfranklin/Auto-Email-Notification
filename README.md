@@ -8,7 +8,7 @@ In this guide, we will walk you through the process of setting up automatic emai
 
 Begin by creating a new Google Sheet or open an existing one where you want to manage contract expiration.
 
-<img src="https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/1-Create-Google-Sheet.png" alt="Create-Google-Sheet" width="300"/>
+<img src="https://github.com/manfranklin/Auto-Email-Notification/blob/main/img/1-Create-Google-Sheet.png" alt="Create-Google-Sheet" width="900"/>
 
 ### Step 2: Set Up Your Data
 
