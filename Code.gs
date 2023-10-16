@@ -16,6 +16,9 @@ function sendNotification() {
   // Get the current date 
   const currentDate = new Date();
 
+// Set how many days in advance you want to receive the notification
+const days_in_advance = 45;
+
   // Loop through each row in the data (starting from the 2nd row)
   for (let i = 1; i < values.length; i++) {
     const row = values[i];
@@ -34,7 +37,7 @@ function sendNotification() {
         const daysUntilRenewal = calculateDaysDifference(renewalDate, currentDate);
 
         // Check if it's 45 days until renewal
-        if (daysUntilRenewal === 45) {
+        if (daysUntilRenewal === days_in_advance) {
 
           // Get the column header as the subject
           const columnHeader = headers[j];
