@@ -1,10 +1,10 @@
 /**
  * Author: Manuel F. Pedro
  * Date: 2023-09-27
- * Description: This function reads a Google Sheets file and sends renewal notifications from to users when the renewal date is within 45 days.
-*/
+ * Description: This function reads a Google Sheets file and sends renewal notifications to users when the renewal date is within 45 days.
+ */
 
-function sendNotification() {
+function sendRenewalNotifications() {
   // Define the sheet where your data is located
   const sheet = SpreadsheetApp.getActiveSpreadsheet();
 
@@ -13,11 +13,11 @@ function sendNotification() {
   const values = dataRange.getValues();
   const headers = values[0]; // Assuming the first row contains headers
 
-  // Get the current date 
+  // Get the current date
   const currentDate = new Date();
 
-// Set how many days in advance you want to receive the notification
-const days_in_advance = 45;
+  // Set how many days in advance you want to receive the notification
+  const daysInAdvance = 45;
 
   // Loop through each row in the data (starting from the 2nd row)
   for (let i = 1; i < values.length; i++) {
@@ -37,7 +37,7 @@ const days_in_advance = 45;
         const daysUntilRenewal = calculateDaysDifference(renewalDate, currentDate);
 
         // Check if it's 45 days until renewal
-        if (daysUntilRenewal === days_in_advance) {
+        if (daysUntilRenewal === daysInAdvance) {
 
           // Get the column header as the subject
           const columnHeader = headers[j];
@@ -49,15 +49,16 @@ const days_in_advance = 45;
           // Log email notification details
           console.log(`Email sent: Subject - ${subject}, Message - ${message}`);
 
-          // Send an email notification, uncomment the line below  when ready to send the message
-          //MailApp.sendEmail('recipient_example@email.com', subject, message);
+          // Send an email notification, uncomment the line below when ready to send the message
+          // MailApp.sendEmail('recipient_example@email.com', subject, message);
         }
       }
     }
   }
+
+  // Log when the script completes
+  console.log("Script execution completed.");
 }
-// Log when the script completes
-console.log("Script execution completed.");
 
 // Function to calculate days between two dates
 function calculateDaysDifference(finalDate, initialDate) {
